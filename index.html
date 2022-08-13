@@ -52,17 +52,25 @@
     <script>
         // const liCollection = document.getElementsByName
         // console.log('li');
-
+        //option-1: getElementByTagName
         const allHeadings = document.getElementsByTagName('h1');
         for(const h1 of allHeadings){
             // console.log(h1.innerText);
         }
 
-
+          //option -2 : getElementById
         const places = document.getElementsByClassName('important-palaces');
        for(const place of places){
            console.log(place.innerText)
        }
+        // option-3: getElementsByClassName
+       const places = document.getElementsByClassName('important-places');
+       for(const place of places){
+             console.log(place.innerText)
+       }
+    //    querySelectorAli
+    const someLi = document.querySelectorAll('.fruits-container li');
+    console.log(someLi);
     </script>
 </body>
 </html>
