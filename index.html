@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of Dom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .important-palaces{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my dom</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem in, quos labore nam, ipsum sit praesentium, veritatis iusto assumenda ut temporibus obcaecati voluptatem doloremque saepe est. Consectetur, corporis iusto?
+    </header>
+    <main>
+        <section id="song">
+            <h1>My Awsome DOM de baba</h1>
+            <ul>
+                <li>jalali</li>
+                <li>Safayet</li>
+                <li>bonobas</li>
+            </ul>
+        </section>
+       
+        <section>
+            <h1>Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+         
+        <section id="places-title">
+            <h1>Plase Like to visit</h1>
+            <ul>
+                <li class="important-palaces">bandorban</li>
+                <li class="important-palaces">kataban</li>
+                <li class="important-palaces">sundaraban</li>
+                <li>shalbon</li>
+            </ul>
+        </section>
+       
+    </main>
+
+    <script src="js/dom.js"></script>
+    <script>
+        // const liCollection = document.getElementsByName
+        // console.log('li');
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const h1 of allHeadings){
+            // console.log(h1.innerText);
+        }
+
+
+        const places = document.getElementsByClassName('important-palaces');
+       for(const place of places){
+           console.log(place.innerText)
+       }
+    </script>
+</body>
+</html>
